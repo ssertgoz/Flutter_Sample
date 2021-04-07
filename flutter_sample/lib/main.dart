@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_sample/providers/auth_provider.dart';
@@ -6,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import 'my_app.dart';
 import 'providers/language_provider.dart';
+import 'services/firestore_database.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

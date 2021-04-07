@@ -1,5 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_database/firebase_database.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/auth_widget_builder.dart';
 import 'package:flutter_sample/providers/auth_provider.dart';
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   // Expose builders for 3rd party services at the root of the widget tree
   // This is useful when mocking services while testing
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
-  final FirebaseDatabase Function(BuildContext context, String uid)
+  final FirestoreDatabase Function(BuildContext context, String uid)
       databaseBuilder;
 
   // This widget is the root of your application.

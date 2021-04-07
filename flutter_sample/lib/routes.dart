@@ -5,10 +5,12 @@ import 'package:flutter_sample/ui/auth/log_in_screen.dart';
 import 'package:flutter_sample/ui/auth/sign_up_screen.dart';
 import 'package:flutter_sample/ui/first_screen.dart';
 import 'package:flutter_sample/ui/home/home_screen.dart';
-import 'package:flutter_sample/ui/name_and_surname.dart';
+
 import 'package:flutter_sample/ui/motivation_screen.dart';
 import 'package:flutter_sample/ui/gender_screen.dart';
 import 'package:flutter_sample/ui/physical_screen.dart';
+
+import 'ui/name_and_surname.dart';
 
 class Routes {
   Routes._(); //this is to prevent anyone from instantiate this object

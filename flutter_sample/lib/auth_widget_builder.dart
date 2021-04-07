@@ -5,13 +5,14 @@ import 'package:flutter_sample/providers/auth_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'models/user_model.dart';
+import 'services/firestore_database.dart';
 
 class AuthWidgetBuilder extends StatelessWidget {
   const AuthWidgetBuilder(
       {Key key, @required this.builder, @required this.databaseBuilder})
       : super(key: key);
   final Widget Function(BuildContext, AsyncSnapshot<UserModel>) builder;
-  final FirebaseDatabase Function(BuildContext context, String uid)
+  final FirestoreDatabase Function(BuildContext context, String uid)
       databaseBuilder;
 
   @override
@@ -30,10 +31,10 @@ class AuthWidgetBuilder extends StatelessWidget {
           return MultiProvider(
             providers: [
               Provider<UserModel>.value(value: user),
-              Provider<FirebaseDatabase>(
+              ChangeNotifierProvider<FirestoreDatabase>(
                 create: (context) => databaseBuilder(context, user.uid),
               ),
-              ChangeNotifierProvider(
+              Provider<FirestoreDatabase>(
                 create: (context) => FirestoreDatabase(uid: user.uid),
               ),
             ],

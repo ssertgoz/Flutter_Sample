@@ -13,7 +13,7 @@ class FirestoreService extends ChangeNotifier {
   }) async {
     final reference =
         FirebaseFirestore.instance.collection(FirestorePath.users());
-    await reference.doc(FirestorePath.user(path)).set(data);
+    await reference.doc(path).set(data);
     print('$path: $data');
   }
 

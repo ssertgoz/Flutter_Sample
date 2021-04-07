@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/models/user_model.dart';
-import 'package:provider/provider.dart';
 
 import 'firebase_path.dart';
 import 'firebase_service.dart';
 
 String documentIdFromCurrentDate() => DateTime.now().toIso8601String();
 
-class FirestoreDatabase extends ChangeNotifierProvider {
+class FirestoreDatabase extends ChangeNotifier {
   FirestoreDatabase({@required this.uid}) : assert(uid != null);
   final String uid;
 
@@ -31,7 +30,7 @@ class FirestoreDatabase extends ChangeNotifierProvider {
   Stream<UserModel> userStream({@required String uid}) =>
       _firestoreService.documentStream(
         path: FirestorePath.user(uid),
-        builder: (data, documentId) => UserModel.fromMap(data, documentId),
+        builder: (data, uid) => UserModel.fromMap(data, uid),
       );
 
   //Method to retrieve all todos item from the same user based on uid
