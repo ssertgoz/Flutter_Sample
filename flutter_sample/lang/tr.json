@@ -1,0 +1,12 @@
+{
+    "loginTxtEmail": "Email",
+    "loginTxtPassword": "Parola",
+    "loginBtnSignIn": "Sign In",
+    "loginBtnSignUp": "Sign Up",
+    "loginTxtHaveAccount": "hesabın var mı?",
+    "loginBtnLinkSignIn": "Sign in",
+    "loginTxtErrorEmail": "Bir email gir",
+    "loginTxtErrorPassword": "en az 6 karakter uzunluğunda bir parola gir",
+    "loginTxtErrorSignIn": "Hatalı email veya parola"
+
+}

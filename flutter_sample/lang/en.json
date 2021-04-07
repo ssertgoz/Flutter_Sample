@@ -1,0 +1,12 @@
+{
+    "loginTxtEmail": "Email",
+    "loginTxtPassword": "Password",
+    "loginBtnSignIn": "Sign In",
+    "loginBtnSignUp": "Sign Up",
+    "loginTxtHaveAccount": "Already have an account?",
+    "loginBtnLinkSignIn": "Sign in",
+    "loginTxtErrorEmail": "Please enter an email",
+    "loginTxtErrorPassword": "Please enter a password with 6+ chars long",
+    "loginTxtErrorSignIn": "Invalid email and/or password"
+
+}
