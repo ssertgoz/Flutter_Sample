@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/constants/constants.dart';
 
 import '../routes.dart';
 
@@ -15,16 +16,12 @@ class FirstScreen extends StatelessWidget {
   }
 }
 
-Widget loading() {
-  return Center(child: CircularProgressIndicator());
-}
-
 Widget firstPage(BuildContext context) {
   return Scaffold(
     body: Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
-      color: Colors.white,
+      color: primaryWhiteColor,
       padding: EdgeInsets.all(50),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -39,7 +36,7 @@ Widget firstPage(BuildContext context) {
           ),
           Text(
             "avokadio",
-            style: TextStyle(color: Color(0xFF1b8c3a), fontSize: 55),
+            style: TextStyle(color: primaryGreenColor, fontSize: 55),
           ),
           SizedBox(
             height: 250,
@@ -49,7 +46,7 @@ Widget firstPage(BuildContext context) {
             height: 30,
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF1b8c3a),
+                    primary: primaryGreenColor,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(25)))),
                 onPressed: () {
@@ -65,7 +62,7 @@ Widget firstPage(BuildContext context) {
             height: 30,
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF1b8c3a),
+                    primary: primaryGreenColor,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(25)))),
                 onPressed: () {

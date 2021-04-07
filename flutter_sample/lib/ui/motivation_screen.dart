@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/constants/constants.dart';
 import 'package:provider/provider.dart';
 
 import '../models/user_model.dart';
@@ -33,7 +34,7 @@ class _MotivationScreenState extends State<MotivationScreen> {
             padding: EdgeInsets.only(bottom: 50, left: 20),
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
-            color: Color(0xFF1b8c3a),
+            color: primaryGreenColor,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -45,7 +46,7 @@ class _MotivationScreenState extends State<MotivationScreen> {
                     """What is your motivatioun ?
                     """,
                     style: TextStyle(
-                        color: Colors.white,
+                        color: primaryWhiteColor,
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
                   ),
@@ -57,8 +58,8 @@ class _MotivationScreenState extends State<MotivationScreen> {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         primary: motivation == Motivation.LoseWeight
-                            ? Colors.greenAccent
-                            : Colors.white,
+                            ? secondaryGreenColor
+                            : primaryWhiteColor,
                         shape: RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(25)))),
@@ -69,7 +70,7 @@ class _MotivationScreenState extends State<MotivationScreen> {
                     },
                     child: Text("Lose weight",
                         style: TextStyle(
-                            color: Color(0xFF1b8c3a),
+                            color: primaryGreenColor,
                             fontWeight: FontWeight.bold,
                             fontSize: 18)),
                   ),
@@ -81,8 +82,8 @@ class _MotivationScreenState extends State<MotivationScreen> {
                   child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           primary: motivation == Motivation.GainMuscle
-                              ? Colors.greenAccent
-                              : Colors.white,
+                              ? secondaryGreenColor
+                              : primaryWhiteColor,
                           shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(25)))),
@@ -93,7 +94,7 @@ class _MotivationScreenState extends State<MotivationScreen> {
                       },
                       child: Text("Gain muscle",
                           style: TextStyle(
-                              color: Color(0xFF1b8c3a),
+                              color: primaryGreenColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 18))),
                 ),
@@ -104,8 +105,8 @@ class _MotivationScreenState extends State<MotivationScreen> {
                   child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           primary: motivation == Motivation.Wellness
-                              ? Colors.greenAccent
-                              : Colors.white,
+                              ? secondaryGreenColor
+                              : primaryWhiteColor,
                           shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(25)))),
@@ -116,7 +117,7 @@ class _MotivationScreenState extends State<MotivationScreen> {
                       },
                       child: Text("Wellness",
                           style: TextStyle(
-                              color: Color(0xFF1b8c3a),
+                              color: primaryGreenColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 18))),
                 ),
@@ -127,7 +128,7 @@ class _MotivationScreenState extends State<MotivationScreen> {
                   height: 30,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
+                        primary: primaryWhiteColor,
                         shape: RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(25)))),
@@ -140,7 +141,7 @@ class _MotivationScreenState extends State<MotivationScreen> {
                     },
                     child: Text(
                       "Continou",
-                      style: TextStyle(color: Color(0xFF1b8c3a)),
+                      style: TextStyle(color: primaryGreenColor),
                     ),
                   ),
                 )

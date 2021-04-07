@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/app_localization.dart';
+import 'package:flutter_sample/constants/constants.dart';
 import 'package:flutter_sample/models/user_model.dart';
 import 'package:flutter_sample/providers/auth_provider.dart';
 import 'package:flutter_sample/routes.dart';
@@ -72,7 +73,7 @@ class _EmailSignUpScreenState extends State<EmailSignUpScreen> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(50.0))),
                   filled: true,
-                  fillColor: Colors.white,
+                  fillColor: primaryWhiteColor,
                   prefixIcon: Icon(
                     Icons.email,
                     color: Colors.black,
@@ -95,7 +96,7 @@ class _EmailSignUpScreenState extends State<EmailSignUpScreen> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(50.0))),
                   filled: true,
-                  fillColor: Colors.white,
+                  fillColor: primaryWhiteColor,
                   prefixIcon: Icon(
                     Icons.lock,
                     color: Colors.black,
@@ -114,7 +115,7 @@ class _EmailSignUpScreenState extends State<EmailSignUpScreen> {
                     margin: EdgeInsets.only(bottom: 50),
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.white,
+                            primary: primaryWhiteColor,
                             shape: RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(25)))),
@@ -143,7 +144,7 @@ class _EmailSignUpScreenState extends State<EmailSignUpScreen> {
                         },
                         child: Text("Sign Up",
                             style: TextStyle(
-                                color: Color(0xFF1b8c3a),
+                                color: primaryGreenColor,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 18))),
                   ),

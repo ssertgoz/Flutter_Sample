@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/constants/constants.dart';
 import 'package:provider/provider.dart';
 
 import '../models/user_model.dart';
@@ -33,7 +34,7 @@ class _GenderScreenState extends State<GenderScreen> {
             padding: EdgeInsets.only(bottom: 50, left: 20),
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
-            color: Color(0xFF1b8c3a),
+            color: primaryGreenColor,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -45,8 +46,8 @@ class _GenderScreenState extends State<GenderScreen> {
                   child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           primary: gender == Gender.Male
-                              ? Colors.greenAccent
-                              : Colors.white,
+                              ? secondaryGreenColor
+                              : primaryWhiteColor,
                           shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(25)))),
@@ -57,7 +58,7 @@ class _GenderScreenState extends State<GenderScreen> {
                       },
                       child: Text("Male",
                           style: TextStyle(
-                              color: Color(0xFF1b8c3a),
+                              color: primaryGreenColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 18))),
                 ),
@@ -68,8 +69,8 @@ class _GenderScreenState extends State<GenderScreen> {
                   child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           primary: gender == Gender.Female
-                              ? Colors.greenAccent
-                              : Colors.white,
+                              ? secondaryGreenColor
+                              : primaryWhiteColor,
                           shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(25)))),
@@ -80,7 +81,7 @@ class _GenderScreenState extends State<GenderScreen> {
                       },
                       child: Text("Female",
                           style: TextStyle(
-                              color: Color(0xFF1b8c3a),
+                              color: primaryGreenColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 18))),
                 ),
@@ -91,7 +92,7 @@ class _GenderScreenState extends State<GenderScreen> {
                   height: 30,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
+                        primary: primaryWhiteColor,
                         shape: RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(25)))),
@@ -103,7 +104,7 @@ class _GenderScreenState extends State<GenderScreen> {
                     },
                     child: Text(
                       "Continou",
-                      style: TextStyle(color: Color(0xFF1b8c3a)),
+                      style: TextStyle(color: primaryGreenColor),
                     ),
                   ),
                 )

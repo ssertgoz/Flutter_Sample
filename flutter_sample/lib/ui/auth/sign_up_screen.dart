@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/app_localization.dart';
+
+import 'package:flutter_sample/constants/constants.dart';
 import 'package:flutter_sample/models/user_model.dart';
 import 'package:flutter_sample/providers/auth_provider.dart';
 import 'package:flutter_sample/routes.dart';
@@ -13,7 +14,7 @@ class SignUpScreen extends StatefulWidget {
 class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController _emailController;
   TextEditingController _passwordController;
-  final _formKey = GlobalKey<FormState>();
+
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -65,7 +66,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               height: 30,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.white,
+                      primary: primaryWhiteColor,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(25)))),
                   onPressed: () {
@@ -73,7 +74,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   },
                   child: Text("E-mail",
                       style: TextStyle(
-                          color: Color(0xFF1b8c3a),
+                          color: primaryGreenColor,
                           fontWeight: FontWeight.bold,
                           fontSize: 18))),
             ),
@@ -85,7 +86,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               height: 30,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.white,
+                      primary: primaryWhiteColor,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(25)))),
                   onPressed: () async {
@@ -103,7 +104,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   },
                   child: Text("Google",
                       style: TextStyle(
-                          color: Color(0xFF1b8c3a),
+                          color: primaryGreenColor,
                           fontWeight: FontWeight.bold,
                           fontSize: 18))),
             )

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/constants/constants.dart';
 import 'package:provider/provider.dart';
 
 import '../models/user_model.dart';
@@ -42,7 +43,7 @@ class _PhysicalScreenState extends State<PhysicalScreen> {
               padding: EdgeInsets.only(bottom: 50, left: 20),
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
-              color: Color(0xFF1b8c3a),
+              color: primaryGreenColor,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,7 +59,7 @@ class _PhysicalScreenState extends State<PhysicalScreen> {
                           child: Text(
                             "Weight ",
                             style: TextStyle(
-                                color: Colors.white,
+                                color: primaryWhiteColor,
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -76,7 +77,7 @@ class _PhysicalScreenState extends State<PhysicalScreen> {
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(50.0))),
                               filled: true,
-                              fillColor: Colors.white,
+                              fillColor: primaryWhiteColor,
                             ),
                           ),
                         ),
@@ -94,7 +95,7 @@ class _PhysicalScreenState extends State<PhysicalScreen> {
                           child: Text(
                             "Height",
                             style: TextStyle(
-                                color: Colors.white,
+                                color: primaryWhiteColor,
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -112,7 +113,7 @@ class _PhysicalScreenState extends State<PhysicalScreen> {
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(50.0))),
                               filled: true,
-                              fillColor: Colors.white,
+                              fillColor: primaryWhiteColor,
                             ),
                           ),
                         ),
@@ -125,7 +126,7 @@ class _PhysicalScreenState extends State<PhysicalScreen> {
                     height: 30,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.white,
+                          primary: primaryWhiteColor,
                           shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(25)))),
@@ -143,7 +144,7 @@ class _PhysicalScreenState extends State<PhysicalScreen> {
                       },
                       child: Text(
                         "Continou",
-                        style: TextStyle(color: Color(0xFF1b8c3a)),
+                        style: TextStyle(color: primaryGreenColor),
                       ),
                     ),
                   )
