@@ -1,14 +1,10 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/constants/constants.dart';
 import 'package:flutter_sample/models/user_model.dart';
 import 'package:provider/provider.dart';
-
 import '../models/user_model.dart';
 import '../providers/auth_provider.dart';
 import '../routes.dart';
-import '../services/firestore_database.dart';
-import '../services/firestore_database.dart';
 import '../services/firestore_database.dart';
 
 class NameSurnameScreen extends StatefulWidget {
@@ -23,7 +19,6 @@ class _NameSurnameScreenState extends State<NameSurnameScreen> {
   TextEditingController _surnameController;
   TextEditingController _birthdayController;
   final _formKey = GlobalKey<FormState>();
-  final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   UserModel _user;
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/app_localization.dart';
 import 'package:flutter_sample/constants/constants.dart';
 import 'package:flutter_sample/models/user_model.dart';
 import 'package:flutter_sample/providers/auth_provider.dart';

@@ -3,7 +3,6 @@ import 'package:flutter_sample/constants/constants.dart';
 import 'package:provider/provider.dart';
 
 import '../models/user_model.dart';
-import '../models/user_model.dart';
 import '../providers/auth_provider.dart';
 import '../routes.dart';
 import '../services/firestore_database.dart';

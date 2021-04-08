@@ -1,9 +1,6 @@
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/providers/auth_provider.dart';
-
 import 'package:provider/provider.dart';
-
 import 'models/user_model.dart';
 import 'services/firestore_database.dart';
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/app_localization.dart';
 import 'package:flutter_sample/constants/constants.dart';
 import 'package:flutter_sample/models/user_model.dart';
 import 'package:flutter_sample/providers/auth_provider.dart';
@@ -14,7 +13,6 @@ class LogInScreen extends StatefulWidget {
 class _LogInScreenState extends State<LogInScreen> {
   TextEditingController _emailController;
   TextEditingController _passwordController;
-  final _formKey = GlobalKey<FormState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override

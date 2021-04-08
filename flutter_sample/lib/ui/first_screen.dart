@@ -1,7 +1,5 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/constants/constants.dart';
-
 import '../routes.dart';
 
 class FirstScreen extends StatelessWidget {
